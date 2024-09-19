@@ -12,10 +12,10 @@ public class Osoba {
     * brak modyfikatora = dostępne w pakiecie
     * */
 
-    public Osoba(int wiek, String nazwisko, String imie) {
-        this.wiek = wiek;                                                       //konstruktor
+    public Osoba(String wiek, String nazwisko, int imie) {
+        this.wiek = Integer.parseInt(wiek);                                                       //konstruktor
         this.nazwisko = nazwisko;    //zmienne lokalne
-        this.imie = imie;
+        this.imie = String.valueOf(imie);
     }
 
     public Osoba(String imie, String nazwisko) {
@@ -53,5 +53,12 @@ public class Osoba {
             System.out.println("Kij ci w szprychy");
         }
 
+    }
+    @Override
+    public String toString() {
+        return "Osoba" +
+                "imie='" + imie + '\'' +
+                ", nazwisko='" + nazwisko + '\'' +
+                ", wiek=" + wiek;
     }
 }
