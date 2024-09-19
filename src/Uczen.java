@@ -1,4 +1,4 @@
-public class Uczen extends Osoba {
+public class Uczen extends Osoba implements Dyżurny{
 //dziedziczymy wszystko publiczne i chronione
     private int numerseryjny;
     public static int liczbauczniow;
@@ -14,5 +14,10 @@ public class Uczen extends Osoba {
                 " imie " + getImie()+
                 " nazwisko " + getNazwisko()+
                 " numerseryjny= " + numerseryjny;
+    }
+
+    @Override
+    public void wykonajdyżur() {
+
     }
 }

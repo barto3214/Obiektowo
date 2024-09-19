@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Osoba {
+public abstract class Osoba {
     private String nazwisko;
     private String imie;
     private int wiek;
@@ -11,6 +11,11 @@ public class Osoba {
     * protected = dostępne w tej klasie i klasie pochodnej(w javie protected to dostępne też w ramach pakietu)
     * brak modyfikatora = dostępne w pakiecie
     * */
+
+    /*
+    * Z klasy abstract nie można utworzyć obiektu
+    * */
+
 
     public Osoba(String wiek, String nazwisko, int imie) {
         this.wiek = Integer.parseInt(wiek);                                                       //konstruktor
