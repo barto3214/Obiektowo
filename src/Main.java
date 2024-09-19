@@ -2,10 +2,10 @@ public class Main {
 
     public static void main(String[] args) {
         Osoba osoba = new Osoba("Jan","Stokrotka");
-        System.out.println(Osoba.imie);
-        System.out.println(Osoba.nazwisko);
-        System.out.println(Osoba.wiek);
-        Osoba.imie = "Jaś";
-        System.out.println(Osoba.imie);
+        System.out.println(osoba.getImie());
+        System.out.println(osoba.getNazwisko());
+        System.out.println(osoba.getWiek());
+        osoba.setImie("Jaś");
+        System.out.println(osoba.getImie());
     }
 }
